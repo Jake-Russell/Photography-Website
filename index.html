@@ -7,11 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
 
     <title>Jake's Photography Page</title>
   </head>
   <body>
-    <div class="container">
+
+      <!--Start navbar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Jake's Photography</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.instagram.com/jake.russell1/">Instagram</a>
@@ -37,13 +41,15 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class = "nav-link" href="#">Contact</a>
+              <a class = "nav-link" href="contact.html">Contact</a>
             </li>
         </div>
       </nav>
+      <!--End navbar-->
 
 
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <!--Start carousel-->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100%; height: 100%; margin: 0 auto">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="landscape1.jpg" alt="First slide">
@@ -64,8 +70,9 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
+      <!--End carousel-->
 
+      
 
     <section class="jumbotron text-center">
       <div class="container">
@@ -74,15 +81,31 @@
       </div>
     </section>
 
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="landscape4.jpeg" alt="Landscape Photography">
-      <div class="card-body">
-        <h5 class="card-title">Landscape Photography</h5>
-        <p class="card-text">View some of my landscape photography.</p>
-        <a href="landscape.html" class="btn btn-primary">Landscape</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="landscape4.jpeg" alt="Landscape Photography">
+            <div class="card-body">
+              <h5 class="card-title">Landscape Photography</h5>
+              <p class="card-text">View some of my landscape photography.</p>
+              <a href="landscape.html" class="btn btn-primary">Landscape</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="portrait1.jpg" alt="Portrait Photography" height=191px width=auto>
+            <div class="card-body">
+              <h5 class="card-title">Portrait Photography</h5>
+              <p class="card-text">View some of my portrait photography.</p>
+              <a href="#" class="btn btn-primary">Portrait</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
